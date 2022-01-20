@@ -7,7 +7,7 @@
     :maskClosable="false">
 
     <template slot="footer">
-      <a-button type="primary" @click="selectOk">确认</a-button>
+      <a-button type="default" @click="selectOk">确认</a-button>
     </template>
 
     <a-form-model>

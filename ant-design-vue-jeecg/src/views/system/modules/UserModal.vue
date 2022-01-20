@@ -30,7 +30,7 @@
           <a-form-model-item label="登录密码" :labelCol="labelCol" :wrapperCol="wrapperCol" prop="password" >
             <a-input type="password" placeholder="请输入登录密码" v-model="model.password" />
           </a-form-model-item>
-  
+
           <a-form-model-item label="确认密码" :labelCol="labelCol" :wrapperCol="wrapperCol" prop="confirmpassword" >
             <a-input type="password" @blur="handleConfirmBlur" placeholder="请重新输入登录密码" v-model="model.confirmpassword"/>
           </a-form-model-item>
@@ -99,7 +99,7 @@
             :format="dateFormat"
             :getCalendarContainer="node => node.parentNode"/>
         </a-form-model-item>
-     
+
         <a-form-model-item label="性别" :labelCol="labelCol" :wrapperCol="wrapperCol">
           <a-select  v-model="model.sex"  placeholder="请选择性别" :getPopupContainer= "(target) => target.parentNode">
             <a-select-option :value="1">男</a-select-option>
@@ -131,7 +131,7 @@
       <a-popconfirm title="确定放弃编辑？" @confirm="handleCancel" okText="确定" cancelText="取消">
         <a-button style="margin-right: .8rem">取消</a-button>
       </a-popconfirm>
-      <a-button @click="handleSubmit" type="primary" :loading="confirmLoading">提交</a-button>
+      <a-button @click="handleSubmit" type="default" :loading="confirmLoading">提交</a-button>
     </div>
   </a-drawer>
 </template>

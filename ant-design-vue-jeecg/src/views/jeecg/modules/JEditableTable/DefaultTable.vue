@@ -1,14 +1,14 @@
 <template>
 
   <div>
-    <a-button @click="handleTableCheck" type="primary">表单验证</a-button>
+    <a-button @click="handleTableCheck" type="default">表单验证</a-button>
     <span style="padding-left:8px;"></span>
     <a-tooltip placement="top" title="获取值，忽略表单验证" :autoAdjustOverflow="true">
-      <a-button @click="handleTableGet" type="primary">获取值</a-button>
+      <a-button @click="handleTableGet" type="default">获取值</a-button>
     </a-tooltip>
     <span style="padding-left:8px;"></span>
     <a-tooltip placement="top" title="模拟加载1000条数据" :autoAdjustOverflow="true">
-      <a-button @click="handleTableSet" type="primary">设置值</a-button>
+      <a-button @click="handleTableSet" type="default">设置值</a-button>
     </a-tooltip>
 
 

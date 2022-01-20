@@ -4,7 +4,7 @@
     <div class="j-vxe-tool-button div" :size="btnSize">
       <slot v-if="showPrefix" name="toolbarPrefix" :size="btnSize"/>
 
-      <a-button v-if="showAdd" icon="plus" @click="trigger('add')" :disabled="disabled" type="primary">新增</a-button>
+      <a-button v-if="showAdd" icon="plus" @click="trigger('add')" :disabled="disabled" type="default">新增</a-button>
       <a-button v-if="showSave" icon="save" @click="trigger('save')" :disabled="disabled">保存</a-button>
       <template v-if="selectedRowIds.length > 0">
         <a-popconfirm

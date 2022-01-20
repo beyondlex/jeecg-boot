@@ -82,7 +82,7 @@
               <a>操作四</a>
               <a>操作五</a>
               <a>操作六</a>
-              <a-button size="small" type="primary" ghost icon="plus">添加</a-button>
+              <a-button size="small" type="default" ghost icon="plus">添加</a-button>
             </div>
           </a-card>
           <a-card title="XX 指数" style="margin-bottom: 24px" :loading="radarLoading" :bordered="false" :body-style="{ padding: 0 }">

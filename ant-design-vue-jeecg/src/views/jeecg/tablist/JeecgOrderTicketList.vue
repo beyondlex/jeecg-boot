@@ -3,7 +3,7 @@
 
     <!-- 操作按钮区域 -->
     <div class="table-operator" :md="24" :sm="24" style="margin: -25px 0px 10px 2px">
-      <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
+      <a-button @click="handleAdd" type="default" icon="plus">新增</a-button>
 
       <a-dropdown v-if="selectedRowKeys.length > 0">
         <a-menu slot="overlay">

@@ -23,8 +23,8 @@
               -->
               <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
             <a-col :md="12" :sm="24">
-               <a-button type="primary" @click="searchQuery" icon="search" style="margin-left: 21px">查询</a-button>
-              <a-button type="primary" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
+               <a-button type="default" @click="searchQuery" icon="search" style="margin-left: 21px">查询</a-button>
+              <a-button type="default" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
             </a-col>
           </span>
             </a-row>
@@ -32,12 +32,12 @@
         </div>
         <!-- 操作按钮区域 -->
         <div class="table-operator" style="margin: 5px 0 10px 2px">
-          <a-button @click="handleAdd" type="primary" icon="plus">新建角色</a-button>
+          <a-button @click="handleAdd" type="default" icon="plus">新建角色</a-button>
           <!--<a-button @click="handleEdit(model1)" type="primary" icon="plus">角色编辑</a-button>-->
           <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader" :action="importExcelUrl" @change="handleImportExcel">
-            <a-button type="primary" icon="import">导入</a-button>
+            <a-button type="default" icon="import">导入</a-button>
           </a-upload>
-          <a-button type="primary" icon="download" @click="handleExportXls('角色管理')">导出</a-button>
+          <a-button type="default" icon="download" @click="handleExportXls('角色管理')">导出</a-button>
         </div>
 
         <div class="ant-alert ant-alert-info" style="margin-bottom: 16px;">
@@ -106,8 +106,8 @@
               </a-col>
               <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
             <a-col :md="9" :sm="24">
-             <a-button type="primary" @click="searchQuery2" icon="search" style="margin-left: 21px">查询</a-button>
-              <a-button type="primary" @click="searchReset2" icon="reload" style="margin-left: 8px">重置</a-button>
+             <a-button type="default" @click="searchQuery2" icon="search" style="margin-left: 21px">查询</a-button>
+              <a-button type="default" @click="searchReset2" icon="reload" style="margin-left: 8px">重置</a-button>
 
             </a-col>
           </span>
@@ -116,9 +116,9 @@
         </div>
         <!-- 操作按钮区域 -->
         <div class="table-operator" :md="24" :sm="24">
-          <a-button @click="handleAdd2" type="primary" icon="plus" style="margin-top: 16px">新增用户</a-button>
+          <a-button @click="handleAdd2" type="default" icon="plus" style="margin-top: 16px">新增用户</a-button>
           <!--<a-button @click="handleEdit2" type="primary" icon="edit" style="margin-top: 16px">用户编辑</a-button>-->
-          <a-button @click="handleAddUserRole" type="primary" icon="plus" style="margin-top: 16px">已有用户</a-button>
+          <a-button @click="handleAddUserRole" type="default" icon="plus" style="margin-top: 16px">已有用户</a-button>
 
           <a-dropdown v-if="selectedRowKeys2.length > 0">
             <a-menu slot="overlay">

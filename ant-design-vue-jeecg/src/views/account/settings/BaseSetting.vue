@@ -45,7 +45,7 @@
           </a-form-item>
 
           <a-form-item>
-            <a-button type="primary">提交</a-button>
+            <a-button type="default">提交</a-button>
             <a-button style="margin-left: 8px">保存</a-button>
           </a-form-item>
         </a-form>

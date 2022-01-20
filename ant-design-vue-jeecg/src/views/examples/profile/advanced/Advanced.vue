@@ -26,7 +26,7 @@
         <a-button>操作</a-button>
         <a-button><a-icon type="ellipsis"/></a-button>
       </a-button-group>
-      <a-button type="primary" >主操作</a-button>
+      <a-button type="default" >主操作</a-button>
     </template>
 
     <a-card :bordered="false" title="流程进度">

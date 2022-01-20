@@ -22,7 +22,7 @@
       </a-form-model-item>
 
       <a-form-item style="margin-top:24px">
-        <a-button size="large"  type="primary"  htmlType="submit"  class="login-button"  :loading="loginBtn"  @click.stop.prevent="handleSubmit" :disabled="loginBtn">确定
+        <a-button size="large"  type="default"  htmlType="submit"  class="login-button"  :loading="loginBtn"  @click.stop.prevent="handleSubmit" :disabled="loginBtn">确定
         </a-button>
       </a-form-item>
 

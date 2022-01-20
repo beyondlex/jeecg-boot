@@ -39,7 +39,7 @@
         ￥ 5,000.00
       </a-form-item>
       <a-form-item :wrapperCol="{span: 19, offset: 5}">
-        <a-button :loading="loading" type="primary" @click="nextStep">提交</a-button>
+        <a-button :loading="loading" type="default" @click="nextStep">提交</a-button>
         <a-button style="margin-left: 8px" @click="prevStep">上一步</a-button>
       </a-form-item>
     </a-form>

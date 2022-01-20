@@ -17,8 +17,8 @@
         :type="collapsed ? 'menu-unfold' : 'menu-fold'"
         @click="toggle"/>
 
-      <span v-if="device === 'desktop'">欢迎进入 Jeecg-Boot 企业级低代码平台</span>
-      <span v-else>Jeecg-Boot</span>
+      <span v-if="device === 'desktop'">Welcome to Low Code</span>
+      <span v-else>Low Code</span>
 
       <user-menu :theme="theme"/>
     </div>
@@ -197,9 +197,11 @@
 
     .header {
       z-index: 2;
-      color: white;
+      //color: white;
+      color: @text-color;
       height: @height;
-      background-color: @primary-color;
+      //background-color: @primary-color;
+      background-color: #fff;
       transition: background 300ms;
 
       /* dark 样式 */

@@ -11,7 +11,7 @@
 
     <!-- 操作按钮区域 -->
     <div class="table-operator">
-      <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
+      <a-button @click="handleAdd" type="default" icon="plus">新增</a-button>
       <a-dropdown v-if="selectedRowKeys.length > 0">
         <a-menu slot="overlay">
           <a-menu-item key="1" @click="batchDel"><a-icon type="delete"/>删除</a-menu-item>
@@ -53,7 +53,7 @@
           <a-button
             v-else
             :ghost="true"
-            type="primary"
+            type="default"
             icon="download"
             size="small"
             @click="uploadFile(text)">

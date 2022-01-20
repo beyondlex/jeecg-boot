@@ -39,7 +39,7 @@
             树操作 <a-icon type="up" />
           </a-button>
         </a-dropdown>
-        <a-button style="float: right" @click="handleSubmit" type="primary" htmlType="button" icon="form">保存</a-button>
+        <a-button style="float: right" @click="handleSubmit" type="default" htmlType="button" icon="form">保存</a-button>
       </div>
     </template>
     <a-card v-else :bordered="false" style="height:200px">

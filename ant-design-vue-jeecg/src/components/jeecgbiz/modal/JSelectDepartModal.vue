@@ -46,8 +46,8 @@
             树操作 <a-icon type="up" />
           </a-button>
         </a-dropdown>
-        <a-button @click="handleCancel" type="primary" style="margin-right: 0.8rem">关闭</a-button>
-        <a-button @click="handleSubmit" type="primary" >确认</a-button>
+        <a-button @click="handleCancel" type="default" style="margin-right: 0.8rem">关闭</a-button>
+        <a-button @click="handleSubmit" type="default" >确认</a-button>
       </div>
     </template>
   </j-modal>
@@ -290,7 +290,7 @@
   // 限制部门选择树高度，避免部门太多时点击确定不便
   .my-dept-select-tree{
     height:350px;
-    
+
     &.fullscreen{
       height: calc(100vh - 250px);
     }

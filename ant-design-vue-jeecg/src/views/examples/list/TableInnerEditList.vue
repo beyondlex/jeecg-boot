@@ -49,7 +49,7 @@
           </template>
           <a-col :md="!advanced && 8 || 24" :sm="24">
             <span class="table-page-search-submitButtons" :style="advanced && { float: 'right', overflow: 'hidden' } || {} ">
-              <a-button type="primary">查询</a-button>
+              <a-button type="default">查询</a-button>
               <a-button style="margin-left: 8px">重置</a-button>
               <a @click="toggleAdvanced" style="margin-left: 8px">
                 {{ advanced ? '收起' : '展开' }}
@@ -62,7 +62,7 @@
     </div>
 
     <div class="table-operator">
-      <a-button type="primary" icon="plus" @click="() => this.handleModalVisible(true)">新建</a-button>
+      <a-button type="default" icon="plus" @click="() => this.handleModalVisible(true)">新建</a-button>
       <a-dropdown v-if="selectedRowKeys.length > 0">
         <a-menu slot="overlay">
           <a-menu-item key="1"><a-icon type="delete" />删除</a-menu-item>

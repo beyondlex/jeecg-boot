@@ -29,7 +29,7 @@
       </a-form-model-item>
       <a-form-model-item :wrapperCol="{span: 19, offset: 5}">
         <router-link style="float: left;line-height: 40px;" :to="{ name: 'login' }">使用已有账户登录</router-link>
-        <a-button type="primary" @click="nextStep" style="margin-left: 20px">下一步</a-button>
+        <a-button type="default" @click="nextStep" style="margin-left: 20px">下一步</a-button>
       </a-form-model-item>
     </a-form-model>
   </div>

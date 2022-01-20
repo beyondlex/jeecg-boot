@@ -53,7 +53,7 @@
         label="客户"
         :labelCol="{lg: {span: 7}, sm: {span: 7}}"
         :wrapperCol="{lg: {span: 10}, sm: {span: 17} }">
-        <a-input 
+        <a-input
           placeholder="请描述你服务的客户，内部客户直接 @姓名／工号"
           v-decorator="[
             'customer',
@@ -101,7 +101,7 @@
         :wrapperCol="{ span: 24 }"
         style="text-align: center"
       >
-        <a-button htmlType="submit" type="primary">提交</a-button>
+        <a-button htmlType="submit" type="default">提交</a-button>
         <a-button style="margin-left: 8px">保存</a-button>
       </a-form-item>
     </a-form>

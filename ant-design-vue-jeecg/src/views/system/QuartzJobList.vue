@@ -23,8 +23,8 @@
 
           <a-col :md="6" :sm="10" >
             <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
-              <a-button type="primary" @click="searchQuery" icon="search">查询</a-button>
-              <a-button type="primary" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
+              <a-button type="default" @click="searchQuery" icon="search">查询</a-button>
+              <a-button type="default" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
             </span>
           </a-col>
 
@@ -34,10 +34,10 @@
 
     <!-- 操作按钮区域 -->
     <div class="table-operator">
-      <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
-      <a-button type="primary" icon="download" @click="handleExportXls('定时任务信息')">导出</a-button>
+      <a-button @click="handleAdd" type="default" icon="plus">新增</a-button>
+      <a-button type="default" icon="download" @click="handleExportXls('定时任务信息')">导出</a-button>
       <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader" :action="importExcelUrl" @change="handleImportExcel">
-        <a-button type="primary" icon="import">导入</a-button>
+        <a-button type="default" icon="import">导入</a-button>
       </a-upload>
       <a-dropdown v-if="selectedRowKeys.length > 0">
         <a-menu slot="overlay">
@@ -214,7 +214,7 @@
           this.isorter.order = "ascend" == sorter.order ? "asc" : "desc"
         }
         //这种筛选方式只支持单选
-        
+
         // update-begin-author:liusq date:20210624 for:前台定时任务无法翻页  #2666
         if(filters && Object.keys(filters).length>0 && filters.status){
           this.filters.status = filters.status[0];

@@ -21,7 +21,7 @@
           </a-row>
         </div>
         <div slot="action">
-          <a-button type="primary" @click="finish">再转一笔</a-button>
+          <a-button type="default" @click="finish">再转一笔</a-button>
           <a-button style="margin-left: 8px" @click="toOrderList">查看账单</a-button>
         </div>
       </result>

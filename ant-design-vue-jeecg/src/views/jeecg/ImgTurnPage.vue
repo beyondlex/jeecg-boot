@@ -19,8 +19,8 @@
       <a-col :span="19">
         <a-row style="margin-top: 10px">
           <a-col :span="24" style="padding-left: 2%;margin-bottom: 10px">
-            <a-button @click="prev" type="primary"><a-icon type="left" />上一页</a-button>
-            <a-button @click="next" type="primary" style="margin-left: 8px">下一页<a-icon type="right" /></a-button>
+            <a-button @click="prev" type="default"><a-icon type="left" />上一页</a-button>
+            <a-button @click="next" type="default" style="margin-left: 8px">下一页<a-icon type="right" /></a-button>
             <span style="margin-left: 15%;font-weight: bolder">{{ navName }}</span>
           </a-col>
           <a-col :span="24" style="padding-left: 2%;">

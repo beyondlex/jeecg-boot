@@ -38,7 +38,7 @@
         <a-input prefix="￥" value="5000" />
       </a-form-item>
       <a-form-item :wrapperCol="{span: 19, offset: 5}">
-        <a-button type="primary" @click="nextStep">下一步</a-button>
+        <a-button type="default" @click="nextStep">下一步</a-button>
       </a-form-item>
     </a-form>
   </div>

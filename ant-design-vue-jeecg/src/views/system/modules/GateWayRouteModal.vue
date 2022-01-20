@@ -91,7 +91,7 @@
         <a-button :style="{marginRight: '8px'}" @click="handleCancel">
           关闭
         </a-button>
-        <a-button @click="handleSubmit" type="primary">确定</a-button>
+        <a-button @click="handleSubmit" type="default">确定</a-button>
       </a-row>
     </a-form-model>
 

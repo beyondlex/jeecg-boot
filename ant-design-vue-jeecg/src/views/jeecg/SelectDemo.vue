@@ -334,14 +334,14 @@
                 -->
                 <template v-slot:button="{isActive,isMobile,open,reset}">
                   <!-- 定义的是普通状态下的按钮 -->
-                  <a-button v-if="!isActive" type="primary" ghost icon="clock-circle" @click="open()">高级查询</a-button>
+                  <a-button v-if="!isActive" type="default" ghost icon="clock-circle" @click="open()">高级查询</a-button>
                   <!-- 定义的当有高级查询条件生效状态下的按钮 -->
                   <a-button-group v-else>
-                    <a-button type="primary" ghost @click="open()">
+                    <a-button type="default" ghost @click="open()">
                       <a-icon type="plus-circle" spin/>
                       <span>高级查询</span>
                     </a-button>
-                    <a-button v-if="isMobile" type="primary" ghost icon="delete" @click="reset()"/>
+                    <a-button v-if="isMobile" type="default" ghost icon="delete" @click="reset()"/>
                   </a-button-group>
                 </template>
               </j-super-query>
@@ -422,7 +422,7 @@
         <a-row :gutter="24">
           <a-col :span="12">
             <a-form-model-item label="功能示例：关闭当前页面">
-              <a-button type="primary" @click="handleCloseCurrentPage">点击关闭当前页面</a-button>
+              <a-button type="default" @click="handleCloseCurrentPage">点击关闭当前页面</a-button>
             </a-form-model-item>
           </a-col>
         </a-row>

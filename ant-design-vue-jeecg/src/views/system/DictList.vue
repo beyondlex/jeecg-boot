@@ -17,22 +17,22 @@
           </a-col>
           <a-col :md="7" :sm="8">
             <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
-              <a-button type="primary" @click="searchQuery" icon="search">查询</a-button>
-              <a-button type="primary" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
+              <a-button type="default" @click="searchQuery" icon="search">查询</a-button>
+              <a-button type="default" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
             </span>
           </a-col>
         </a-row>
       </a-form>
 
       <div class="table-operator" style="border-top: 5px">
-        <a-button @click="handleAdd" type="primary" icon="plus">添加</a-button>
-        <a-button type="primary" icon="download" @click="handleExportXls('字典信息')">导出</a-button>
+        <a-button @click="handleAdd" type="default" icon="plus">添加</a-button>
+        <a-button type="default" icon="download" @click="handleExportXls('字典信息')">导出</a-button>
         <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader" :action="importExcelUrl" @change="handleImportExcel">
-          <a-button type="primary" icon="import">导入</a-button>
+          <a-button type="default" icon="import">导入</a-button>
         </a-upload>
-        <a-button type="primary" icon="sync" @click="refleshCache()">刷新缓存</a-button>
+        <a-button type="default" icon="sync" @click="refleshCache()">刷新缓存</a-button>
 
-        <a-button type="primary" icon="hdd" @click="openDeleteList">回收站</a-button>
+        <a-button type="default" icon="hdd" @click="openDeleteList">回收站</a-button>
       </div>
 
       <a-table

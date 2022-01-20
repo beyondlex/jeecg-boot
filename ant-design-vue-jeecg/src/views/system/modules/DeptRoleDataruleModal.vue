@@ -18,7 +18,7 @@
 
             <a-col :span="24">
               <div style="width: 100%;margin-top: 15px">
-                <a-button @click="saveDataruleForRole" type="primary" size="small" icon="save">点击保存</a-button>
+                <a-button @click="saveDataruleForRole" type="default" size="small" icon="save">点击保存</a-button>
               </div>
             </a-col>
           </a-row>

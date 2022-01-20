@@ -2,7 +2,7 @@
   <a-card :bordered="false">
     <!-- 操作按钮区域 -->
     <div class="table-operator">
-      <a-button @click="showModal(null)" type="primary" icon="plus">新增</a-button>
+      <a-button @click="showModal(null)" type="default" icon="plus">新增</a-button>
     </div>
     <div>
       <a-table

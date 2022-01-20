@@ -2,7 +2,7 @@
   <a-card :bordered="false">
     <result :is-success="false" :title="title" :description="description">
       <template slot="action">
-        <a-button type="primary" >返回修改</a-button>
+        <a-button type="default" >返回修改</a-button>
       </template>
       <div>
         <div style="font-size: 16px; color: rgba(0, 0, 0, 0.85); font-weight: 500; margin-bottom: 16px">

@@ -29,7 +29,7 @@
     <template slot="footer">
       <a-button @click="handleClose">关闭</a-button>
       <a-button
-        type="primary"
+        type="default"
         @click="handleImport"
         :disabled="fileList.length === 0"
         :loading="uploading">

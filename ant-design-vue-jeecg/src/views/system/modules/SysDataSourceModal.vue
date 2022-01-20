@@ -62,7 +62,7 @@
               <a-input-password placeholder="请输入密码" v-decorator="['dbPassword', validatorRules.dbPassword]"/>
             </a-col>
             <a-col :span="3">
-              <a-button type="primary" size="small" style="width: 100%" @click="handleTest">测试</a-button>
+              <a-button type="default" size="small" style="width: 100%" @click="handleTest">测试</a-button>
             </a-col>
           </a-row>
         </a-form-item>

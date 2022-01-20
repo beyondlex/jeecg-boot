@@ -17,7 +17,7 @@
               <a-textarea :rows="5" v-model="model.content" placeholder="请输入消息内容"/>
             </a-form-model-item>
             <div style="text-align: center;">
-              <a-button type="primary" size="large" @click="onSend" style="width: 120px;">发送</a-button>
+              <a-button type="default" size="large" @click="onSend" style="width: 120px;">发送</a-button>
             </div>
           </a-tab-pane>
         </a-tabs>

@@ -36,14 +36,14 @@
               </a-col>
               <a-col :md="7" :sm="24">
               <span style="float: left;" class="table-page-search-submitButtons">
-                <a-button type="primary" @click="searchQuery">搜索</a-button>
-                <a-button type="primary" @click="searchReset" style="margin-left: 8px">重置</a-button>
+                <a-button type="default" @click="searchQuery">搜索</a-button>
+                <a-button type="default" @click="searchReset" style="margin-left: 8px">重置</a-button>
               </span>
               </a-col>
             </a-row>
             <a-row>
               <a-col :md="2" :sm="24">
-                <a-button style="margin-bottom: 10px" type="primary" @click="handleAdd">新增</a-button>
+                <a-button style="margin-bottom: 10px" type="default" @click="handleAdd">新增</a-button>
               </a-col>
             </a-row>
           </a-form>

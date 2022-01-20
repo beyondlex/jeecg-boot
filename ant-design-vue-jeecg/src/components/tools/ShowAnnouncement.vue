@@ -9,7 +9,7 @@
    >
     <template slot="footer">
       <a-button key="back" @click="handleCancel">关闭</a-button>
-      <a-button v-if="record.openType==='url'" type="primary" @click="toHandle">去处理</a-button>
+      <a-button v-if="record.openType==='url'" type="default" @click="toHandle">去处理</a-button>
     </template>
     <a-card class="daily-article" :loading="loading">
       <a-card-meta

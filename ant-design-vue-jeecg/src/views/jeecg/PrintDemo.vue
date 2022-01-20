@@ -1,7 +1,7 @@
 <template>
   <a-card :bordered="false" :class="{'abcdefg':true}">
     <div class="no-print" style="text-align: right">
-      <a-button v-print="'#printContent'" ghost type="primary">打印</a-button>
+      <a-button v-print="'#printContent'" ghost type="default">打印</a-button>
     </div>
     <section ref="print" id="printContent" class="abcdefg">
       <div style="text-align: center">

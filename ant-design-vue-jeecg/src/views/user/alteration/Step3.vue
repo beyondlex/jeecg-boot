@@ -16,7 +16,7 @@
 
       <a-form-model-item :wrapperCol="{span: 19, offset: 5}">
         <a-button style="margin-left: 8px" @click="prevStep">上一步</a-button>
-        <a-button :loading="loading" type="primary" @click="nextStep" style="margin-left:20px">提交</a-button>
+        <a-button :loading="loading" type="default" @click="nextStep" style="margin-left:20px">提交</a-button>
       </a-form-model-item>
     </a-form-model>
   </div>

@@ -56,7 +56,7 @@
 
     <!-- fixed footer toolbar -->
     <footer-tool-bar>
-      <a-button type="primary" @click="validate" :loading="loading">提交</a-button>
+      <a-button type="default" @click="validate" :loading="loading">提交</a-button>
     </footer-tool-bar>
   </div>
 </template>

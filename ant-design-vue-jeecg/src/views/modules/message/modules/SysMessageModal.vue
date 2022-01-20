@@ -78,7 +78,7 @@
     </a-spin>
     <div v-show="!disableSubmit">
       <a-button style="margin-right: .8rem" @confirm="handleCancel">取消</a-button>
-      <a-button @click="handleOk" type="primary" :loading="confirmLoading">提交</a-button>
+      <a-button @click="handleOk" type="default" :loading="confirmLoading">提交</a-button>
     </div>
   </a-drawer>
 </template>

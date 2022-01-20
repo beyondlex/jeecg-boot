@@ -12,14 +12,14 @@
         <a @click="handleReset">清空</a>
       </template>
       <a-button-group>
-        <a-button type="primary" @click="handleOpen">
+        <a-button type="default" @click="handleOpen">
           <a-icon type="appstore" theme="twoTone" spin/>
           <span>高级查询</span>
         </a-button>
-        <a-button v-if="izMobile" type="primary" icon="delete" @click="handleReset"/>
+        <a-button v-if="izMobile" type="default" icon="delete" @click="handleReset"/>
       </a-button-group>
     </a-tooltip>
-    <a-button v-else type="primary" icon="filter" @click="handleOpen">高级查询</a-button>
+    <a-button v-else type="default" icon="filter" @click="handleOpen">高级查询</a-button>
   </slot>
 
   <j-modal
@@ -39,7 +39,7 @@
         <a-button :loading="loading" @click="handleSave">保存查询条件</a-button>
       </div>
       <a-button :loading="loading" @click="handleCancel">关闭</a-button>
-      <a-button :loading="loading" type="primary" @click="handleOk">查询</a-button>
+      <a-button :loading="loading" type="default" @click="handleOk">查询</a-button>
     </template>
 
     <a-spin :spinning="loading">

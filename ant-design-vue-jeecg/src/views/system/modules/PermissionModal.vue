@@ -169,7 +169,7 @@
         <a-button :style="{marginRight: '8px'}" @click="handleCancel">
           关闭
         </a-button>
-        <a-button :disabled="disableSubmit" @click="handleOk" type="primary">确定</a-button>
+        <a-button :disabled="disableSubmit" @click="handleOk" type="default">确定</a-button>
       </a-row>
     </div>
   </a-drawer>

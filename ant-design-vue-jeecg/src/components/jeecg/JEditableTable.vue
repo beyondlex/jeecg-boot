@@ -12,7 +12,7 @@
         <!-- 操作按钮 -->
         <div v-if="actionButton" class="action-button">
           <a-button-group v-if="buttonPermission('add')">
-            <a-button type="primary" icon="plus" @click="handleClickAdd" :disabled="disabled">新增</a-button>
+            <a-button type="default" icon="plus" @click="handleClickAdd" :disabled="disabled">新增</a-button>
             <a-popover v-if="addButtonSettings" placement="right" overlayClassName="j-add-btn-settings">
               <a-row slot="title">
                 <a-col :span="12">选项</a-col>
@@ -35,7 +35,7 @@
                   <a-checkbox v-model="settings.addScrollToBottom">添加后滚动到底部</a-checkbox>
                 </a-form-model>
               </template>
-              <a-button icon="setting" type="primary"></a-button>
+              <a-button icon="setting" type="default"></a-button>
             </a-popover>
           </a-button-group>
           <span class="gap"></span>
@@ -43,7 +43,7 @@
             <a-popconfirm
               :title="`确定要删除这 ${selectedRowIds.length} 项吗?`"
               @confirm="handleConfirmDelete">
-              <a-button v-if="buttonPermission('batch_delete')" type="primary" icon="minus" :disabled="disabled">删除</a-button>
+              <a-button v-if="buttonPermission('batch_delete')" type="default" icon="minus" :disabled="disabled">删除</a-button>
               <span class="gap"></span>
             </a-popconfirm>
             <template v-if="showClearSelectButton">

@@ -17,7 +17,7 @@
 
           <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
                <a-col :md="6" :sm="24">
-                  <a-button type="primary" @click="searchQuery">查询</a-button>
+                  <a-button type="default" @click="searchQuery">查询</a-button>
                   <a-button style="margin-left: 8px" @click="searchReset">重置</a-button>
                </a-col>
             </span>
@@ -27,7 +27,7 @@
 
     <!-- 操作按钮区域 -->
     <div class="table-operator">
-      <a-button @click="handleCompare()" type="primary" icon="plus">数据比较</a-button>
+      <a-button @click="handleCompare()" type="default" icon="plus">数据比较</a-button>
     </div>
 
     <!--table区 -->

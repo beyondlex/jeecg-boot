@@ -18,8 +18,8 @@
 
           <a-col :span="8" >
             <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
-              <a-button type="primary" @click="searchQuery" icon="search">查询</a-button>
-              <a-button type="primary" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
+              <a-button type="default" @click="searchQuery" icon="search">查询</a-button>
+              <a-button type="default" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
             </span>
           </a-col>
 
@@ -28,7 +28,7 @@
     </div>
 
     <div class="table-operator">
-      <a-button type="primary" @click="readAll" icon="book">全部标注已读</a-button>
+      <a-button type="default" @click="readAll" icon="book">全部标注已读</a-button>
     </div>
 
     <a-table

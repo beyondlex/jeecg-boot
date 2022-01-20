@@ -12,7 +12,7 @@
 <!--    </div>-->
 <!--    <div :id="eleId" :style="{ height: editorHeight + 'px', width: '100%' }"></div>-->
 <!--    <div style="text-align: center;padding-top:10px">-->
-<!--      <a-button type="primary" @click="submitForm" style="width:160px">保存</a-button>-->
+<!--      <a-button type="default" @click="submitForm" style="width:160px">保存</a-button>-->
 <!--    </div>-->
 <!--  </a-card>-->
 <!--</template>-->

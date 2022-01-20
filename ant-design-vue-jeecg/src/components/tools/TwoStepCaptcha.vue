@@ -10,7 +10,7 @@
     <template slot="footer">
       <div :style="{ textAlign: 'center' }">
         <a-button key="back" @click="handleCancel">返回</a-button>
-        <a-button key="submit" type="primary" :loading="stepLoading" @click="handleStepOk">
+        <a-button key="submit" type="default" :loading="stepLoading" @click="handleStepOk">
           继续
         </a-button>
       </div>
@@ -75,7 +75,7 @@ export default {
       this.$emit('cancel')
     },
     onForgeStepCode() {
-      
+
     }
   }
 };

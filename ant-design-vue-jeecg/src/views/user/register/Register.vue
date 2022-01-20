@@ -69,7 +69,7 @@
       <a-form-model-item>
         <a-button
           size="large"
-          type="primary"
+          type="default"
           htmlType="submit"
           class="register-button"
           :loading="registerBtn"

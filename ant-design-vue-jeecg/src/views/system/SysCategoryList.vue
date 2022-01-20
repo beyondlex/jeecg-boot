@@ -1,12 +1,12 @@
 <template>
   <a-card :bordered="false">
-    
+
     <!-- 操作按钮区域 -->
     <div class="table-operator">
-      <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
-      <a-button type="primary" icon="download" @click="handleExportXls('分类字典')">导出</a-button>
+      <a-button @click="handleAdd" type="default" icon="plus">新增</a-button>
+      <a-button type="default" icon="download" @click="handleExportXls('分类字典')">导出</a-button>
       <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader"  :action="importExcelUrl" @change="handleImportExcel">
-        <a-button type="primary" icon="import">导入</a-button>
+        <a-button type="default" icon="import">导入</a-button>
       </a-upload>
       <a-dropdown v-if="selectedRowKeys.length > 0">
         <a-menu slot="overlay">
@@ -35,7 +35,7 @@
         @change="handleTableChange"
         @expand="handleExpand"
         v-bind="tableProps">
-        
+
         <span slot="action" slot-scope="text, record">
           <a @click="handleEdit(record)">编辑</a>
           <a-divider type="vertical" />
@@ -59,7 +59,7 @@
   import { JeecgListMixin } from '@/mixins/JeecgListMixin'
   import SysCategoryModal from './modules/SysCategoryModal'
   import { deleteAction } from '@/api/manage'
-  
+
   export default {
     name: "SysCategoryList",
     mixins:[JeecgListMixin],
@@ -328,8 +328,8 @@
           return Promise.resolve()
         }
       },
-      
-       
+
+
     }
   }
 </script>

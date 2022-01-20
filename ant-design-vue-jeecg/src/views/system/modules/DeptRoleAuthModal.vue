@@ -48,8 +48,8 @@
       <a-popconfirm title="确定放弃编辑？" @confirm="close" okText="确定" cancelText="取消">
         <a-button style="margin-right: .8rem">取消</a-button>
       </a-popconfirm>
-      <a-button @click="handleSubmit(false)" type="primary" :loading="loading" ghost style="margin-right: 0.8rem">仅保存</a-button>
-      <a-button @click="handleSubmit(true)" type="primary" :loading="loading">保存并关闭</a-button>
+      <a-button @click="handleSubmit(false)" type="default" :loading="loading" ghost style="margin-right: 0.8rem">仅保存</a-button>
+      <a-button @click="handleSubmit(true)" type="default" :loading="loading">保存并关闭</a-button>
     </div>
     <dept-role-datarule-modal ref="datarule"></dept-role-datarule-modal>
   </a-drawer>

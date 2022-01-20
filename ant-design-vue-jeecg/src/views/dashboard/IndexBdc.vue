@@ -71,7 +71,7 @@
                   <div class="item-group">
                     <a-row>
                       <a-col :class="'more-btn'" :span="12" v-for="(item,index) in registerTypeList" :key=" 'registerType'+index ">
-                        <a-button @click="goPage(index)" style="margin-bottom:10px" size="small" type="primary" ghost>{{ item.text }}</a-button>
+                        <a-button @click="goPage(index)" style="margin-bottom:10px" size="small" type="default" ghost>{{ item.text }}</a-button>
                       </a-col>
                     </a-row>
                   </div>
@@ -92,7 +92,7 @@
                   <div class="item-group">
                     <a-row>
                       <a-col :class="'more-btn'" :span="12" v-for="(item,index) in registerTypeList" :key=" 'registerType'+index ">
-                        <a-button @click="goPage(index)" style="margin-bottom:10px" size="small" type="primary" ghost>{{ item.text }}</a-button>
+                        <a-button @click="goPage(index)" style="margin-bottom:10px" size="small" type="default" ghost>{{ item.text }}</a-button>
                       </a-col>
                     </a-row>
                   </div>
@@ -120,7 +120,7 @@
                   <div class="item-group">
                     <a-row>
                       <a-col :class="'more-btn'" :span="10" v-for="(item,index) in registerTypeList" :key=" 'registerType'+index ">
-                        <a-button @click="goPage(index)" style="margin-bottom:10px" size="small" type="primary" ghost>{{ item.text }}</a-button>
+                        <a-button @click="goPage(index)" style="margin-bottom:10px" size="small" type="default" ghost>{{ item.text }}</a-button>
                       </a-col>
                     </a-row>
                   </div>

@@ -24,7 +24,7 @@
         </div>
         <div class="ant-modal-confirm-btns">
           <a-button @click="thirdLoginUserCreate" :loading="thirdCreateUserLoding">创建新账号</a-button>
-          <a-button @click="thirdLoginUserBind" type="primary">确认绑定</a-button>
+          <a-button @click="thirdLoginUserBind" type="default">确认绑定</a-button>
         </div>
       </div>
     </a-modal>
@@ -32,7 +32,7 @@
     <!-- 第三方登录绑定手机号 -->
     <a-modal :visible="bindingPhoneModal" :class="'ant-modal-confirm'">
       <template slot="footer">
-        <a-button key="submit" type="primary" @click="thirdHandleOk">
+        <a-button key="submit" type="default" @click="thirdHandleOk">
           确定
         </a-button>
       </template>

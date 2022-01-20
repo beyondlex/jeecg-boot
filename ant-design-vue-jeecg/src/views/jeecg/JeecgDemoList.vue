@@ -41,8 +41,8 @@
           </template>
           <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
             <a-col :xl="6" :lg="7" :md="8" :sm="24">
-              <a-button type="primary" @click="searchQuery" icon="search">查询</a-button>
-              <a-button type="primary" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
+              <a-button type="default" @click="searchQuery" icon="search">查询</a-button>
+              <a-button type="default" @click="searchReset" icon="reload" style="margin-left: 8px">重置</a-button>
               <a @click="handleToggleSearch" style="margin-left: 8px">
                 {{ toggleSearchStatus ? '收起' : '展开' }}
                 <a-icon :type="toggleSearchStatus ? 'up' : 'down'"/>
@@ -55,12 +55,12 @@
 
     <!-- 操作按钮区域 -->
     <div class="table-operator">
-      <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
-      <a-button type="primary" icon="plus" @click="jump">创建单据</a-button>
-      <a-button type="primary" icon="plus" @click="onetomany">一对多</a-button>
-      <a-button type="primary" icon="download" @click="handleExportXls('单表示例')">导出</a-button>
+      <a-button @click="handleAdd" type="default" icon="plus">新增</a-button>
+      <a-button type="default" icon="plus" @click="jump">创建单据</a-button>
+      <a-button type="default" icon="plus" @click="onetomany">一对多</a-button>
+      <a-button type="default" icon="download" @click="handleExportXls('单表示例')">导出</a-button>
       <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader" :action="importExcelUrl" @change="handleImportExcel">
-        <a-button type="primary" icon="import">导入</a-button>
+        <a-button type="default" icon="import">导入</a-button>
       </a-upload>
       <!-- 高级查询区域 -->
       <j-super-query :fieldList="fieldList" ref="superQueryModal" @handleSuperQuery="handleSuperQuery"></j-super-query>

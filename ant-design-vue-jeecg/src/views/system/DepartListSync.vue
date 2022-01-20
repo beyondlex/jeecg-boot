@@ -5,11 +5,11 @@
 
         <!-- 按钮操作区域 -->
         <a-row style="margin: 0 0 0 14px" class="table-operator">
-          <a-button @click="handleAdd(1)" type="primary">添加部门</a-button>
-          <a-button @click="handleAdd(2)" type="primary">添加下级</a-button>
-          <a-button type="primary" icon="download" @click="handleExportXls('部门信息')">导出</a-button>
+          <a-button @click="handleAdd(1)" type="default">添加部门</a-button>
+          <a-button @click="handleAdd(2)" type="default">添加下级</a-button>
+          <a-button type="default" icon="download" @click="handleExportXls('部门信息')">导出</a-button>
           <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader" :action="importExcelUrl" @change="handleImportExcel">
-            <a-button type="primary" icon="import">导入</a-button>
+            <a-button type="default" icon="import">导入</a-button>
           </a-upload>
           <j-third-app-button biz-type="depart" :selected-row-keys="selectedRowKeys" syncToApp @sync-finally="onSyncFinally"/>
           <a-button title="删除多条数据" @click="batchDel" type="default">批量删除</a-button>
@@ -119,7 +119,7 @@
             </a-form-model>
             <div class="anty-form-btn">
               <a-button @click="emptyCurrForm" type="default" htmlType="button" icon="sync">重置</a-button>
-              <a-button @click="submitCurrForm" type="primary" htmlType="button" icon="form">保存</a-button>
+              <a-button @click="submitCurrForm" type="default" htmlType="button" icon="form">保存</a-button>
             </div>
           </a-card>
           <a-card v-else >
@@ -269,9 +269,9 @@
         that.departTree = []
         //所有的树节点key信息
         that.allIds = []
-        
+
         that.iExpandedKeys = []
-        
+
         that.loading = false
         queryDepartTreeSync().then((res) => {
           if (res.success) {

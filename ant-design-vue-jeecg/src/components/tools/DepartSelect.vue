@@ -7,7 +7,7 @@
     :maskClosable="closable">
     <template slot="footer">
       <a-button v-if="closable" @click="close">关闭</a-button>
-      <a-button type="primary" @click="departOk">确认</a-button>
+      <a-button type="default" @click="departOk">确认</a-button>
     </template>
 
     <a-form>
@@ -36,7 +36,7 @@
 
 
   </a-modal>
-    
+
 </template>
 
 <script>

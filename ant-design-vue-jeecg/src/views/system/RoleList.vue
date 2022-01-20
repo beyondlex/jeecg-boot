@@ -20,7 +20,7 @@
           </a-col>
           <span style="float: left;overflow: hidden;" class="table-page-search-submitButtons">
             <a-col :md="6" :sm="24">
-              <a-button type="primary" @click="searchQuery">查询</a-button>
+              <a-button type="default" @click="searchQuery">查询</a-button>
               <a-button style="margin-left: 8px" @click="searchReset">重置</a-button>
             </a-col>
           </span>
@@ -30,10 +30,10 @@
 
     <!-- 操作按钮区域 -->
     <div class="table-operator"  style="margin-top: 5px">
-      <a-button @click="handleAdd" type="primary" icon="plus">新增</a-button>
-      <a-button type="primary" icon="download" @click="handleExportXls('角色信息')">导出</a-button>
+      <a-button @click="handleAdd" type="default" icon="plus">新增</a-button>
+      <a-button type="default" icon="download" @click="handleExportXls('角色信息')">导出</a-button>
       <a-upload name="file" :showUploadList="false" :multiple="false" :headers="tokenHeader" :action="importExcelUrl" @change="handleImportExcel">
-        <a-button type="primary" icon="import">导入</a-button>
+        <a-button type="default" icon="import">导入</a-button>
       </a-upload>
 
       <a-dropdown v-if="selectedRowKeys.length > 0">

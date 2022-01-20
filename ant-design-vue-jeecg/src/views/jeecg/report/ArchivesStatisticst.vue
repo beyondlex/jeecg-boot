@@ -21,8 +21,8 @@
                   :mode="barDate"
                   @panelChange="handleBarDate"/>
               </a-form-item>
-              <a-button style="margin-top: 2px" type="primary" icon="search" @click="queryDatebar">查询</a-button>
-              <a-button style="margin-top: 2px;margin-left: 8px" type="primary" icon="reload" @click="searchReset">重置</a-button>
+              <a-button style="margin-top: 2px" type="default" icon="search" @click="queryDatebar">查询</a-button>
+              <a-button style="margin-top: 2px;margin-left: 8px" type="default" icon="reload" @click="searchReset">重置</a-button>
             </a-form>
           </a-col>
           <bar class="statistic" title="档案统计" :dataSource="countSource" :height="400"/>
@@ -50,8 +50,8 @@
                     :mode="pieDate"
                     @panelChange="handlePieDate"/>
                 </a-form-item>
-                <a-button style="margin-top: 2px" type="primary" icon="search" @click="queryDatepie">查询</a-button>
-                <a-button style="margin-top: 2px;margin-left: 8px" type="primary" icon="reload" @click="searchReset">重置</a-button>
+                <a-button style="margin-top: 2px" type="default" icon="search" @click="queryDatepie">查询</a-button>
+                <a-button style="margin-top: 2px;margin-left: 8px" type="default" icon="reload" @click="searchReset">重置</a-button>
               </a-row>
             </a-form>
           </a-col>

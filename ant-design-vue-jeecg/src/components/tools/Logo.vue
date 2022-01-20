@@ -21,7 +21,7 @@
     props: {
       title: {
         type: String,
-        default: 'Jeecg-Boot Pro',
+        default: 'Low-Code Pro',
         required: false
       },
       showTitle: {
@@ -50,7 +50,8 @@
       transition: background 300ms;
 
       a {
-        color: white;
+        //color: white;
+        color: @text-color;
         &:hover {
           color: rgba(255, 255, 255, 0.8);
         }
@@ -58,7 +59,8 @@
     }
 
     &.light .logo {
-      background-color: @primary-color;
+      //background-color: @primary-color;
+      background-color: #fff;
     }
   }
 </style>
