@@ -1,0 +1,3 @@
+
+GET {{host}}/demo/hello?name=jim
+Accept: application/json

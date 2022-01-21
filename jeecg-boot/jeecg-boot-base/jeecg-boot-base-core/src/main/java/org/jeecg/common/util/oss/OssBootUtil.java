@@ -5,6 +5,7 @@ import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.common.auth.DefaultCredentialProvider;
 import com.aliyun.oss.model.CannedAccessControlList;
 import com.aliyun.oss.model.OSSObject;
+import com.aliyun.oss.model.ObjectMetadata;
 import com.aliyun.oss.model.PutObjectResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tomcat.util.http.fileupload.FileItemStream;
@@ -131,7 +132,11 @@ public class OssBootUtil {
             } else {
                 FILE_URL = "https://" + newBucket + "." + endPoint + "/" + fileUrl;
             }
-            PutObjectResult result = ossClient.putObject(newBucket, fileUrl.toString(), file.getInputStream());
+            // PutObjectResult result = ossClient.putObject(newBucket, fileUrl.toString(), file.getInputStream());
+            ObjectMetadata objectMetadata = new ObjectMetadata();
+            objectMetadata.setCacheControl("max-age=31536000");// 一年内请求该资源都由浏览器来缓存, 除非用户清缓存
+
+            PutObjectResult result = ossClient.putObject(newBucket, fileUrl.toString(), file.getInputStream(), objectMetadata);
             // 设置权限(公开读)
 //            ossClient.setBucketAcl(newBucket, CannedAccessControlList.PublicRead);
             if (result != null) {
